@@ -1,0 +1,136 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+textarea,
+input {
+  outline: none;
+}
+
+.attribution {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+}
+.background .card {
+  display: flex;
+  width: 1110px;
+  height: 445px;
+  border-radius: 7px;
+  background-color: hsl(244, 38%, 16%);
+  overflow: hidden;
+}
+.background .card_stats {
+  padding: 70px;
+  padding-right: 90px;
+}
+.background .card_stats h2 {
+  margin-top: 0px;
+  margin-bottom: 27px;
+  font-size: 35px;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.4px;
+}
+.background .card_stats h2 span {
+  color: hsl(277, 64%, 61%);
+}
+.background .card_stats p {
+  padding-right: 40px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+  margin-bottom: 66px;
+}
+.background .card_stats_3statsRow {
+  display: flex;
+}
+.background .card_stats_3statsRow_stat {
+  flex: 1 1 auto;
+}
+.background .card_stats_3statsRow_stat .first {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+}
+.background .card_stats_3statsRow_stat .second {
+  margin-top: 0px;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.5);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+}
+.background .card_image {
+  flex: 1 0 540px;
+  background-image: url("/images/image-header-desktop.jpg");
+  background-color: hsl(280, 40%, 35%);
+  background-blend-mode: soft-light;
+}
+
+@media screen and (max-width: 420px) {
+  .background .card {
+    flex-direction: column-reverse;
+    width: 328px;
+    height: 780px;
+  }
+  .background .card_stats {
+    flex: 1 3 auto;
+    padding: 33px;
+    padding-right: 37px;
+    padding-bottom: 13px;
+    text-align: center;
+  }
+  .background .card_stats h2 {
+    font-size: 27px;
+    margin-top: 5px;
+    margin-bottom: 17px;
+  }
+  .background .card_stats p {
+    padding-right: 0px;
+    margin-bottom: 35px;
+  }
+  .background .card_stats_3statsRow {
+    flex-direction: column;
+  }
+  .background .card_stats_3statsRow_stat .second {
+    margin-bottom: 20px;
+  }
+  .background .card_image {
+    flex: 0 0 240px;
+    background-image: url("/images/image-header-mobile.jpg");
+    background-size: contain;
+  }
+}/*# sourceMappingURL=main.css.map */

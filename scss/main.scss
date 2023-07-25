@@ -1,0 +1,68 @@
+@import "globals";
+@import "footer";
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+  .card {
+    display: flex;
+    width: 1110px;
+    height: 445px;
+    border-radius: 7px;
+    background-color: hsl(244, 38%, 16%);
+    overflow: hidden;
+    &_stats {
+      padding: 70px;
+      padding-right: 90px;
+      h2 {
+        margin-top: 0px;
+        margin-bottom: 27px;
+        font-size: 35px;
+        color: hsl(0, 0%, 100%);
+        letter-spacing: 0.4px;
+        span {
+          color: hsl(277, 64%, 61%);
+        }
+      }
+      p {
+        padding-right: 40px;
+        font-weight: 400;
+        color: hsla(0, 0%, 100%, 0.6);
+        line-height: 1.8;
+        letter-spacing: 0.4px;
+        margin-bottom: 66px;
+      }
+      &_3statsRow {
+        display: flex;
+        &_stat {
+          flex: 1 1 auto;
+          .first {
+            margin: 0px;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.5;
+            color: hsl(0, 0%, 100%);
+          }
+          .second {
+            margin-top: 0px;
+            font-family: "Lexend Deca", sans-serif;
+            color: hsla(0, 0%, 100%, 0.5);
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 0.4px;
+          }
+        }
+      }
+    }
+    &_image {
+      flex: 1 0 540px;
+      background-image: url("/images/image-header-desktop.jpg");
+      background-color: hsl(280, 40%, 35%);
+      background-blend-mode: soft-light;
+    }
+  }
+}
+@import "mediaQs";

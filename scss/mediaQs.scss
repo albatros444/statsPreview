@@ -1,0 +1,40 @@
+@media screen and (max-width: 420px) {
+  .background {
+    .card {
+      flex-direction: column-reverse;
+      width: 328px;
+      height: 780px;
+      &_stats {
+        flex: 1 3 auto;
+        padding: 33px;
+        padding-right: 37px;
+        padding-bottom: 13px;
+        text-align: center;
+        h2 {
+          font-size: 27px;
+          margin-top: 5px;
+          margin-bottom: 17px;
+        }
+        p {
+          padding-right: 0px;
+          margin-bottom: 35px;
+        }
+        &_3statsRow {
+          flex-direction: column;
+          &_stat {
+            .first {
+            }
+            .second {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+      &_image {
+        flex: 0 0 240px;
+        background-image: url("/images/image-header-mobile.jpg");
+        background-size: contain;
+      }
+    }
+  }
+}
